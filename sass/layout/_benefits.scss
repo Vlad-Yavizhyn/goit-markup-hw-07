@@ -4,10 +4,9 @@
   
   .benefits-list {
     width: 270px;
-  }
-  
-  .benefits-list:not(:last-child) {
-    margin-right: 30px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
   }
   
   .benefits-box {
@@ -51,43 +50,49 @@
     justify-content: space-between;
   }
   
-  .work-thumb-one::before {
-    position: absolute;
-    content: 'ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 370px;
-    height: 70px;
-    color: var(--tertiary-text-color);
-    background-color: rgba(47, 48, 58, 0.8);
-    bottom: 0px;
+  .work-thumb-one {
+    &::before {
+      position: absolute;
+      content: 'ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 370px;
+      height: 70px;
+      color: var(--tertiary-text-color);
+      background-color: rgba(47, 48, 58, 0.8);
+      bottom: 0px;
+    }
   }
   
-  .work-thumb-two::before {
-    position: absolute;
-    content: 'МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 370px;
-    height: 70px;
-    color: var(--tertiary-text-color);
-    background-color: rgba(47, 48, 58, 0.8);
-    bottom: 0px;
+  .work-thumb-two {
+    &::before {
+      position: absolute;
+      content: 'МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 370px;
+      height: 70px;
+      color: var(--tertiary-text-color);
+      background-color: rgba(47, 48, 58, 0.8);
+      bottom: 0px;
+    }
   }
   
-  .work-thumb-three::before {
-    position: absolute;
-    content: 'ДИЗАЙНЕРСКИЕ РЕШЕНИЯ';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 370px;
-    height: 70px;
-    color: var(--tertiary-text-color);
-    background-color: rgba(47, 48, 58, 0.8);
-    bottom: 0px;
+  .work-thumb-three {
+    &::before {
+      position: absolute;
+      content: 'ДИЗАЙНЕРСКИЕ РЕШЕНИЯ';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 370px;
+      height: 70px;
+      color: var(--tertiary-text-color);
+      background-color: rgba(47, 48, 58, 0.8);
+      bottom: 0px;
+    }
   }
   
   .work-section {

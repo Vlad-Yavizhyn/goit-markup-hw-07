@@ -2,11 +2,11 @@
     padding: 60px 0;
     background: var(--footer-background-color);
   }
-  
+
   .address-footer {
     margin-top: 20px;
   }
-  
+
   .physical-address {
     font-style: normal;
     font-size: 14px;
@@ -14,45 +14,45 @@
     letter-spacing: 0.03em;
     color: var(--tertiary-text-color);
     transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
-  
+
   .address {
     margin: 0px 0px 9px 0px;
   }
-  
-  .contacts-item:not(:last-child) {
-    margin: 0px 0px 9px 0px;
+
+  .contacts-item {
+    &:not(:last-child) {
+      margin: 0px 0px 9px 0px;
+    }
   }
-  
-  .physical-address:hover,
-  .physical-address:focus {
-    color: var(--accent-color);
-  }
-  
+
   .contacts-link-footer {
     margin-bottom: 9px;
     color: var(--secondary-text-color);
     transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
-  
-  .contacts-link-footer:hover,
-  .contacts-link-footer:focus {
-    color: var(--accent-color);
-  }
-  
+
   .footer-block {
     flex-grow: 1;
   }
-  
+
   .footer-box {
     display: flex;
     align-items: baseline;
   }
-  
+
   .join-box {
     margin-left: 70px;
   }
-  
+
   .join-text {
     margin-bottom: 20px;
     font-weight: 700;
@@ -62,22 +62,22 @@
     text-transform: uppercase;
     color: #ffffff;
   }
-  
+
   .social-icon {
     fill: #ffffff;
   }
-  
+
   .actions-footer {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
   }
-  
+
   .footer-social-box {
     width: 44px;
     height: 44px;
   }
-  
+
   .footer-social-link {
     display: flex;
     width: 100%;
@@ -88,21 +88,20 @@
     background: rgba(255, 255, 255, 0.1);
     color: #ffffff;
     transition: background 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      background: var(--accent-color);
+    }
   }
-  
+
   .footer-social-box + .footer-social-box {
     margin-left: 10px;
   }
-  
-  .footer-social-link:hover,
-  .footer-social-link:focus {
-    background: var(--accent-color);
-  }
-  
+
   .submit-box {
     margin-left: 93px;
   }
-  
+
   .submit-button {
     display: flex;
     justify-content: space-between;
@@ -121,23 +120,21 @@
   
     border-radius: 4px;
     padding: 10px 29px 10px 29px;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
   }
-  
-  .submit-button:hover,
-  .submit-button:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-  
+
   .submit-icon {
     fill: #ffffff;
   }
-  
-  
+
   .form {
     display: flex;
   }
-  
+
   .submit-input {
     width: 358px;
     height: 50px;

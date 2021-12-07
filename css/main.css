@@ -65,6 +65,60 @@ img {
   padding: 94px 0px;
 }
 
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms var(--timing-function);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  width: 528px;
+  min-height: 581px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.button-close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  background: #ffffff;
+  fill: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: fill 250ms var(--timing-function);
+}
+
+.button-close:hover, .button-close:focus {
+  fill: var(--accent-color);
+}
+
+.close-icon {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
 .form-text {
   margin-bottom: 12px;
   font-family: Roboto;
@@ -88,7 +142,6 @@ img {
 .modal-form-input {
   width: 100%;
   height: 40px;
-  /* margin-bottom: 10px; */
   padding: 0px;
   padding-left: 42px;
   padding-right: 15px;
@@ -123,14 +176,6 @@ img {
   border-color: var(--accent-color);
 }
 
-/* .modal-form-checkbox {
-    width: 16px;
-    height: 15px;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
-  } */
 .modal-form-checkbox:checked + .modal-checkbox-text .check-item {
   background-color: var(--accent-color);
   border: none;
@@ -283,6 +328,14 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
+.site-nav-link:hover, .site-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
 .current::after {
   position: absolute;
   content: '';
@@ -293,15 +346,6 @@ img {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-}
-
-.current {
-  color: var(--accent-color);
-}
-
-.site-nav-link:hover,
-.site-nav-link:focus {
-  color: var(--accent-color);
 }
 
 .contacts {
@@ -330,11 +374,19 @@ img {
   fill: currentColor;
 }
 
+.mail-icon:hover .mail-icon:focus {
+  fill: var(--accent-color);
+}
+
 .smartphone-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+}
+
+.smartphone-icon:hover .smartphone-icon:focus {
+  fill: var(--accent-color);
 }
 
 .contacts-link {
@@ -349,17 +401,8 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts-link:hover, .contacts-link:focus {
   color: var(--accent-color);
-}
-
-.mail-icon:hover .mail-icon:focus {
-  fill: var(--accent-color);
-}
-
-.smartphone-icon:hover .smartphone-icon:focus {
-  fill: var(--accent-color);
 }
 
 .hero {
@@ -401,63 +444,6 @@ img {
   border-radius: 4px;
   padding: 10px 32px;
   margin-top: 30px;
-}
-
-/* Model window */
-.backdrop {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms var(--timing-function);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 40px;
-  width: 528px;
-  min-height: 581px;
-  border-radius: 4px;
-  background-color: #ffffff;
-}
-
-.button-close {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  /* margin-left: 490px; */
-  /* margin-top: 8px; */
-  margin-right: 8px;
-  background: #ffffff;
-  fill: #000000;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  transition: fill 250ms var(--timing-function);
-}
-
-.button-close:hover, .button-close:focus {
-  fill: var(--accent-color);
-}
-
-.close-icon {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
 }
 
 .benefits {
@@ -625,7 +611,7 @@ img {
 }
 
 .team-social-link:hover,
-.team-social-link:focus {
+.team-social-link .team-social-link:focus {
   fill: #ffffff;
   background-color: var(--accent-color);
 }
@@ -659,8 +645,7 @@ img {
   transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
-.button-icon-link:hover,
-.button-icon-link:focus {
+.button-icon-link:hover, .button-icon-link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -685,12 +670,7 @@ img {
   transition: color 250ms var(--timing-function), box-shadow 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
-.filter-item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.filter-button:hover,
-.filter-button:focus {
+.filter-button:hover, .filter-button:focus {
   background-color: var(--accent-color);
   font-weight: 500;
   font-size: 16px;
@@ -698,6 +678,10 @@ img {
   letter-spacing: 0.03em;
   color: var(--tertiary-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .projects-group {
@@ -780,6 +764,10 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
+.physical-address:hover, .physical-address:focus {
+  color: var(--accent-color);
+}
+
 .address {
   margin: 0px 0px 9px 0px;
 }
@@ -788,19 +776,13 @@ img {
   margin: 0px 0px 9px 0px;
 }
 
-.physical-address:hover,
-.physical-address:focus {
-  color: var(--accent-color);
-}
-
 .contacts-link-footer {
   margin-bottom: 9px;
   color: var(--secondary-text-color);
   transition: color 250ms var(--timing-function);
 }
 
-.contacts-link-footer:hover,
-.contacts-link-footer:focus {
+.contacts-link-footer:hover, .contacts-link-footer:focus {
   color: var(--accent-color);
 }
 
@@ -854,13 +836,12 @@ img {
   transition: background 250ms var(--timing-function);
 }
 
-.footer-social-box + .footer-social-box {
-  margin-left: 10px;
+.footer-social-link:hover, .footer-social-link:focus {
+  background: var(--accent-color);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background: var(--accent-color);
+.footer-social-box + .footer-social-box {
+  margin-left: 10px;
 }
 
 .submit-box {
@@ -884,8 +865,7 @@ img {
   padding: 10px 29px 10px 29px;
 }
 
-.submit-button:hover,
-.submit-button:focus {
+.submit-button:hover, .submit-button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 

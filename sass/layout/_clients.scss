@@ -21,10 +21,10 @@
     justify-content: center;
     fill: #afb1b8;
     transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+      fill: var(--accent-color);
+    }
   }
   
-  .button-icon-link:hover,
-  .button-icon-link:focus {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
-  }
