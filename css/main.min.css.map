@@ -8,7 +8,7 @@
         "../sass/components/_container.scss",
         "../sass/components/_title.scss",
         "../sass/components/_section.scss",
-        "../sass/components/_modal-window",
+        "../sass/components/_modal-window.scss",
         "../sass/components/_modal-content.scss",
         "../sass/utils/_hidden.scss",
         "../sass/layout/_header.scss",
