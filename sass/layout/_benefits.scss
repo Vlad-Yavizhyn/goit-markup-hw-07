@@ -1,100 +1,99 @@
 .benefits {
-    display: flex;
+  display: flex;
+}
+
+.benefits__list {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
   }
-  
-  .benefits-list {
-    width: 270px;
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
-  }
-  
-  .benefits-box {
+}
+
+.benefits__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.benefits__description {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.03em;
+  margin: 0px 0px 10px 0px;
+}
+
+.benefits__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/* What we do */
+
+.work {
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.work__list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-thumb-one {
+  &::before {
+    position: absolute;
+    content: 'ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ';
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-    background-color: #f5f4fa;
-    border-radius: 4px;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    color: var(--tertiary-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    bottom: 0px;
   }
-  
-  .benefits-description {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 0.87;
-    letter-spacing: 0.03em;
-    margin: 0px 0px 10px 0px;
-  }
-  
-  .benefits-text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
-  }
-  
-  /* What we do */
-  
-  .work {
-    margin: 0px 0px 50px 0px;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-align: center;
-  }
-  .work-list {
-    position: relative;
+}
+
+.work-thumb-two {
+  &::before {
+    position: absolute;
+    content: 'МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ';
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    color: var(--tertiary-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    bottom: 0px;
   }
-  
-  .work-thumb-one {
-    &::before {
-      position: absolute;
-      content: 'ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ';
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 370px;
-      height: 70px;
-      color: var(--tertiary-text-color);
-      background-color: rgba(47, 48, 58, 0.8);
-      bottom: 0px;
-    }
+}
+
+.work-thumb-three {
+  &::before {
+    position: absolute;
+    content: 'ДИЗАЙНЕРСКИЕ РЕШЕНИЯ';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    color: var(--tertiary-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    bottom: 0px;
   }
-  
-  .work-thumb-two {
-    &::before {
-      position: absolute;
-      content: 'МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ';
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 370px;
-      height: 70px;
-      color: var(--tertiary-text-color);
-      background-color: rgba(47, 48, 58, 0.8);
-      bottom: 0px;
-    }
-  }
-  
-  .work-thumb-three {
-    &::before {
-      position: absolute;
-      content: 'ДИЗАЙНЕРСКИЕ РЕШЕНИЯ';
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 370px;
-      height: 70px;
-      color: var(--tertiary-text-color);
-      background-color: rgba(47, 48, 58, 0.8);
-      bottom: 0px;
-    }
-  }
-  
-  .work-section {
-    padding-top: 0;
-  }
+}
+
+// .work-section {
+//   padding-top: 0;
+// }
