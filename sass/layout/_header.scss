@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .header {
   background: #ffffff;
   border-bottom: 1px solid #ececec;
@@ -124,5 +125,163 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+=======
+.page-header {
+    background: #ffffff;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .page-header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  /* logo */
+  .logo-blue {
+    color: var(--accent-color);
+  
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  
+    outline: none;
+    display: inline-block;
+  }
+
+  .logo-black {
+    font-family: 'Raleway', sans-serif;
+    color: var(--logo-secondary-color);
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+
+  .logo-white {
+    font-family: 'Raleway', sans-serif;
+    color: var(--tertiary-text-color);
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+
+  /* nav links */
+
+  .site-nav {
+    display: flex;
+    margin-left: 93px;
+  }
+
+  .site-nav-item {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    &:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+
+  .site-nav-link {
+    position: relative;
+    display: block;
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    padding: 32px 0;
+  
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .current {
+    color: var(--accent-color);
+    &::after {
+      position: absolute;
+      content: '';
+    
+      left: 0;
+      bottom: 0;
+    
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
+  }
+
+  .contacts {
+    display: flex;
+    align-items: center;
+    color: var(--tertiary-text-color);
+  }
+
+  .contacts-item {
+    color: var(--secondary-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  .contacts-item-header {
+    &:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+
+  .mail-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+    &:hover 
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+
+  .smartphone-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+    &:hover 
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+
+  .contacts-link {
+    color: var(--secondary-text-color);
+    padding: 32px 0;
+    font-size: 14px;
+    line-height: 1.4px;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+>>>>>>> Stashed changes
   }
 }

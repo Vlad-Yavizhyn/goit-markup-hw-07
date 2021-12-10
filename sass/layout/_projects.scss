@@ -3,7 +3,7 @@
     margin-bottom: 50px;
     justify-content: center;
   }
-  
+
   .filter-button {
     border: transparent;
     font-weight: 500;
@@ -43,7 +43,7 @@
     flex-wrap: wrap;
     margin: -15px;
   }
-  
+
   .project-link {
     display: block;
     transition: box-shadow 250ms var(--timing-function);
@@ -59,12 +59,12 @@
     margin: 15px;
     border-bottom: 1px solid #eeeeee;
   }
-  
+
   .project-wrap {
     position: relative;
     overflow: hidden;
   }
-  
+
   .projects-overlay {
     position: absolute;
     height: 100%;
@@ -79,7 +79,7 @@
     background-color: rgba(33, 150, 243, 0.9);
     transition: transform 250ms var(--timing-function);
   }
-  
+
   .progect-title {
     font-size: 18px;
     line-height: 2;
@@ -89,12 +89,12 @@
   
     margin-bottom: 4px;
   }
-  
+
   .project-title-box {
     padding: 20px 24px;
     border: 1px solid #eeeeee;
   }
-  
+
   .project-text {
     font-size: 16px;
     line-height: 1.87;
