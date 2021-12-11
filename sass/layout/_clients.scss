@@ -6,12 +6,12 @@
 .actions__button-icon-link {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--active-button-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #afb1b8;
+  fill: var(--active-button-color);
   transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
   &:hover,
   &:focus {

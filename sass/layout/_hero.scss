@@ -1,6 +1,6 @@
 .hero {
   padding: 200px 0;
-  background: var(--hero-gackground-color);
+  background: var(--additional-background-color);
   text-align: center;
 }
 
@@ -24,19 +24,22 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--tertiary-text-color);
+  color: var(--primary-color);
 }
 
 .hero__button {
+  font: var(--main-font);
   border: transparent;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
+  letter-spacing: 0.06em;
 
-  color: var(--tertiary-text-color);
+  color: var(--primary-color);
   background: var(--accent-color);
 
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--box-shadow);
 
   border-radius: 4px;
   padding: 10px 32px;

@@ -1,9 +1,9 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    background-color: var(--primary-background-color);
+    background-color: var(--primary-color);
     color: var(--primary-text-color);
   }
 

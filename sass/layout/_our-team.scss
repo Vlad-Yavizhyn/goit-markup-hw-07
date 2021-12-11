@@ -1,5 +1,5 @@
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--button-background-color);
 }
 
 .team__group {
@@ -7,7 +7,7 @@
 }
 
 .team__item {
-  background: #ffffff;
+  background: var(--primary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -58,12 +58,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #afb1b8;
+  color: var(--active-button-color);
   transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
   fill: currentColor;
   &:hover,
   .team__social-link:focus {
-    fill: #ffffff;
+    fill: var(--primary-color);
     background-color: var(--accent-color);
   }
 }
@@ -78,5 +78,5 @@
 // }
 
 .team-social-icon {
-  fill: #afb1b8;
+  fill: var(--active-button-color);
 }
