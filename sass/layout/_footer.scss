@@ -33,6 +33,7 @@
 .footer__contacts-link-footer {
   margin-bottom: 9px;
   color: var(--secondary-text-color);
+  font-style: normal;
   transition: color 250ms var(--timing-function);
   &:hover,
   &:focus {

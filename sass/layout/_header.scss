@@ -70,13 +70,13 @@
   }
 }
 
-.header__contacts {
+.contacts {
   display: flex;
   align-items: center;
   color: var(--primary-color);
 }
 
-.header__contacts-item {
+.contacts__item {
   // color: var(--secondary-text-color);
   font-style: normal;
   font-weight: 500;
@@ -85,13 +85,13 @@
   letter-spacing: 0.02em;
 }
 
-.header__contacts-item-header {
+.contacts__item-header {
   &:not(:first-child) {
     margin-left: 50px;
   }
 }
 
-.mail-icon {
+.contacts__mail-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -101,7 +101,7 @@
   }
 }
 
-.smartphone-icon {
+.contacts__smartphone-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -111,7 +111,7 @@
   }
 }
 
-.header__contacts-link {
+.contacts__link {
   color: var(--secondary-text-color);
   padding: 32px 0;
   font-size: 14px;

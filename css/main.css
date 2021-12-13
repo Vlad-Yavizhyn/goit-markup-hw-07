@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --primary-color: #ffffff;
   --secondary-color: #000000;
@@ -61,7 +60,7 @@ img {
   margin-right: auto;
 }
 
-.title {
+.section__title {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -251,30 +250,22 @@ img {
   fill: var(--primary-color);
 }
 
-.logo-blue {
+.logo {
   color: var(--accent-color);
   font-family: var(--secondary-font);
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  outline: none;
-  display: inline-block;
 }
 
 .logo-black {
   font-family: var(--secondary-font);
   color: var(--secondary-color);
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .logo-white {
   font-family: var(--secondary-font);
   color: var(--primary-color);
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -355,13 +346,13 @@ img {
   border-radius: 2px;
 }
 
-.header__contacts {
+.contacts {
   display: flex;
   align-items: center;
   color: var(--primary-color);
 }
 
-.header__contacts-item {
+.contacts__item {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -369,33 +360,33 @@ img {
   letter-spacing: 0.02em;
 }
 
-.header__contacts-item-header:not(:first-child) {
+.contacts__item-header:not(:first-child) {
   margin-left: 50px;
 }
 
-.mail-icon {
+.contacts__mail-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.mail-icon:hover .mail-icon:focus {
+.contacts__mail-icon:hover .contacts__mail-icon:focus {
   fill: var(--accent-color);
 }
 
-.smartphone-icon {
+.contacts__smartphone-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.smartphone-icon:hover .smartphone-icon:focus {
+.contacts__smartphone-icon:hover .contacts__smartphone-icon:focus {
   fill: var(--accent-color);
 }
 
-.header__contacts-link {
+.contacts__link {
   color: var(--secondary-text-color);
   padding: 32px 0;
   font-size: 14px;
@@ -407,7 +398,7 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.header__contacts-link:hover, .header__contacts-link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
 }
 
@@ -459,11 +450,11 @@ img {
   display: flex;
 }
 
-.benefits__list {
+.benefits__item {
   width: 270px;
 }
 
-.benefits__list:not(:last-child) {
+.benefits__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -478,7 +469,7 @@ img {
   border-radius: 4px;
 }
 
-.benefits__description {
+.benefits__titel {
   font-weight: 700;
   font-size: 14px;
   line-height: 0.87;
@@ -494,64 +485,58 @@ img {
 }
 
 /* What we do */
-.work {
-  font-size: 14px;
+.section__no-padding-top {
+  padding-top: 0px;
+}
+
+.section__title {
+  margin-bottom: 50px;
   font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
 }
 
-.work__list {
+.work {
+  display: flex;
+}
+
+.work__item {
   position: relative;
-  display: flex;
-  justify-content: space-between;
+  overflow: hidden;
 }
 
-.work-thumb-one::before {
+.work__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work__item > .work__item-text {
   position: absolute;
-  content: 'ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ';
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 224px;
+  right: 0;
+  margin: 0;
   width: 370px;
   height: 70px;
+  background: var(--secondary-background-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 27px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--primary-color);
-  background-color: var(--secondary-background-color);
-  bottom: 0px;
 }
 
-.work-thumb-two::before {
-  position: absolute;
-  content: 'МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ';
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 370px;
-  height: 70px;
-  color: var(--primary-color);
-  background-color: var(--secondary-background-color);
-  bottom: 0px;
-}
-
-.work-thumb-three::before {
-  position: absolute;
-  content: 'ДИЗАЙНЕРСКИЕ РЕШЕНИЯ';
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 370px;
-  height: 70px;
-  color: var(--primary-color);
-  background-color: var(--secondary-background-color);
-  bottom: 0px;
-}
-
-.team {
+.section__other-gackground {
   background-color: var(--button-background-color);
 }
 
-.team__group {
+.team {
   display: flex;
 }
 
@@ -584,23 +569,23 @@ img {
   text-align: center;
 }
 
-.team__social-net {
+.socials {
   display: flex;
   justify-content: center;
   width: 270px;
   margin-top: 16px;
 }
 
-.team__thumb {
+.socials__item {
   width: 44px;
   height: 44px;
 }
 
-.team__thumb + .team__thumb {
+.socials__item + .socials__item {
   margin-left: 10px;
 }
 
-.team__social-link {
+.socials__link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -612,8 +597,8 @@ img {
   fill: currentColor;
 }
 
-.team__social-link:hover,
-.team__social-link .team__social-link:focus {
+.socials__link:hover,
+.socials__link .socials__link:focus {
   fill: var(--primary-color);
   background-color: var(--accent-color);
 }
@@ -627,7 +612,7 @@ img {
   justify-content: space-between;
 }
 
-.actions__button-icon-link {
+.actions__link {
   width: 170px;
   height: 92px;
   border: 1px solid var(--active-button-color);
@@ -639,7 +624,7 @@ img {
   transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
-.actions__button-icon-link:hover, .actions__button-icon-link:focus {
+.actions__link:hover, .actions__link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -695,7 +680,7 @@ img {
   transform: translateY(0);
 }
 
-.projects__box {
+.projects__item {
   margin: 15px;
   border-bottom: 1px solid #eeeeee;
 }
@@ -773,6 +758,7 @@ img {
 .footer__contacts-link-footer {
   margin-bottom: 9px;
   color: var(--secondary-text-color);
+  font-style: normal;
   transition: color 250ms var(--timing-function);
 }
 
